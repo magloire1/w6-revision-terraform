@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "week6-sk-bucket-terraform-toki"
+    bucket = "my-bucket"
     key    = "dev/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "terraform-lock"
+    dynamodb_table = "dynamodb-table-name"
     encrypt = true
   }
 }
